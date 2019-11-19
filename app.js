@@ -25,9 +25,15 @@ app.use(express.static("public"));
 app.use(express.static("views"));
 
 app.get("/", (req, res) => res.render("index.html"));
+app.get("/searchResults.txt", (req, res) => {
+  fs.readFile('./searchResults.txt', 'utf8', (err, data) => {
+    if (err) console.log('error', err);
+    console.log(data);
+  })
+});
 app.get("/results", (req, res) => res.render("results.html"));
 
-app.get("/search", (req, res) => {
+app.post("/search", (req, res) => {
   const url =
     "https://www.googleapis.com/customsearch/v1?key=AIzaSyBfERkazXQItqZYA8iR2DgfE39QXItsPjU&cx=000973296940924731098:cjzveyjuqon&q=cat";
 
@@ -36,11 +42,9 @@ app.get("/search", (req, res) => {
       return response.json();
     })
     .then(response => {
-      console.log(response);
       const searchResults = response.items;
-      fs.writeFile('searchResults.json', JSON.stringify(searchResults), (err) => {
-
-        if (err) console.log('Resu');
+      fs.writeFile('searchResults.txt', JSON.stringify(searchResults), (err) => {
+        if (err) console.log('error', err);
         console.log('file saved!')
     });
 
