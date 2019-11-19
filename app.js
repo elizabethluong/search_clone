@@ -24,9 +24,9 @@ app.use(express.static("views"));
 app.get("/", (req, res) => res.render("index.html"));
 app.get("/results", (req, res) => res.render("results.html"));
 
-app.get("/search", (req, res) => {
+app.post("/search", (req, res) => {
     console.log(req);
-    res.render("result.html");
+    res.render("results.html");
 }) 
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
