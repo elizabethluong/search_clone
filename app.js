@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const fetch = require("node-fetch");
+const fs = require('fs');
 
 // set html view engine using ejs. NEED ALL 5 LINES
 const path = require("path");
@@ -36,9 +37,15 @@ app.get("/search", (req, res) => {
     })
     .then(response => {
       console.log(response);
+      const searchResults = response.items;
+      fs.writeFile('searchResults.json', JSON.stringify(searchResults), (err) => {
+
+        if (err) console.log('Resu');
+        console.log('file saved!')
     });
 
   res.render("results.html");
+});
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
