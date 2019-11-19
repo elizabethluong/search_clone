@@ -25,7 +25,6 @@ h1 {
 
 .logo {
   color: #a60400;
-
 }
 
 input[type="text"] {
@@ -37,7 +36,8 @@ input[type="text"] {
   padding: 15px 20px;
 }
 
-input[type="button"] {
+input[type="button"],
+input[type="submit"] {
   padding: 8px 15px;
   font-weight: bold;
   background: #bce4f5;
@@ -46,9 +46,10 @@ input[type="button"] {
   cursor: pointer;
 }
 
-input[type="button"]:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover {
   color: white;
-  background: #546a6b
+  background: #546a6b;
 }
 
 fieldset {
