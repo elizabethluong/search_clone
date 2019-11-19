@@ -6,8 +6,52 @@
 
 body {
   font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
   font-family: "Anton", sans-serif;
+  font-size: 60px;
+}
+
+.logo {
+  color: #a60400
+
+}
+
+input[type="text"] {
+  border-radius: 12px;
+  width: 350px;
+  height: 30px;
+  border: gray 1px solid;
+  box-shadow: 0 0 5px #999999;
+  padding: 15px 20px;
+}
+
+input[type="button"] {
+  padding: 8px 15px;
+  font-weight: bold;
+  background: #bce4f5;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  color: white;
+  background: #546a6b
+}
+
+fieldset {
+  border: 0;
+  padding: 15px;
 }
