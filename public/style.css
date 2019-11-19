@@ -25,7 +25,6 @@ h1 {
 
 .logo {
   color: #a60400;
-
 }
 
 input[type="text"] {
@@ -37,7 +36,12 @@ input[type="text"] {
   padding: 15px 20px;
 }
 
+<<<<<<< HEAD
 input[type="button"], input[type="submit"] {
+=======
+input[type="button"],
+input[type="submit"] {
+>>>>>>> d02449c990f648e71b34098ec0d265f45dbcd4e3
   padding: 8px 15px;
   font-weight: bold;
   background: #bce4f5;
@@ -46,9 +50,14 @@ input[type="button"], input[type="submit"] {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 input[type="button"]:hover, input[type="submit"]:hover {
+=======
+input[type="button"]:hover,
+input[type="submit"]:hover {
+>>>>>>> d02449c990f648e71b34098ec0d265f45dbcd4e3
   color: white;
-  background: #546a6b
+  background: #546a6b;
 }
 
 fieldset {
