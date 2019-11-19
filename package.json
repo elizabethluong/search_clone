@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/elizabethluong/search_clone#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^2.7.3",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }
