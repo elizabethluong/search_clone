@@ -15,7 +15,9 @@ body {
 
 .container-results {
   overflow: hidden;
+  padding-bottom: 25px;
 }
+
 
 a {
   text-decoration: none;

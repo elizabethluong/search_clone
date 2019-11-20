@@ -12,13 +12,21 @@ h2 {
   font-family: "Anton", sans-serif;
   font-size: 40px;
 }
+
+.logo-container > * {
+  display: inline;
+  padding-right: 10px;
+}
 .container-results {
   text-align: left;
   padding: 10px 40px;
   width: 60%;
   margin: auto;
+  padding-bottom: 25px;
 }
-.result-heading, .result-url, .result-description {
+.result-heading,
+.result-url,
+.result-description {
   padding-bottom: 10px;
 }
 .result-heading > a {
