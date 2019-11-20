@@ -31,12 +31,7 @@
           id="searchButton"
           value="Search"
         />
-        <input
-          type="button"
-          name="randomButton"
-          id="randomButton"
-          value="Random"
-        />
+        <a class="randomBtn" href="<%= (JSON.parse(data)[Math.floor(Math.random()*10)].link) %>">Random</a>
       </form>
     </div>
     <div class="container-results">

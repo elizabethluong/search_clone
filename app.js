@@ -36,7 +36,8 @@ app.get("/results", (req, res) => res.render("results.ejs"));
 app.post("/search", (req, res) => {
   const userInput = req.body.keyword;
   const url =
-    "https://www.googleapis.com/customsearch/v1?key=AIzaSyBfERkazXQItqZYA8iR2DgfE39QXItsPjU&cx=000973296940924731098:cjzveyjuqon&q=";
+    // "https://www.googleapis.com/customsearch/v1?key=AIzaSyBfERkazXQItqZYA8iR2DgfE39QXItsPjU&cx=000973296940924731098:cjzveyjuqon&q=";
+    "https://www.googleapis.com/customsearch/v1?key=AIzaSyAFGfVnB-wP0YNoRlbwIYJry1YVo5A30dY&cx=000973296940924731098:cjzveyjuqon&q="; // new api key
 console.log(url + userInput);
 
   fetch(url + userInput)
@@ -44,12 +45,8 @@ console.log(url + userInput);
       return response.json();
     })
     .then(response => {
-      // const searchResults = response.items;
-      // console.log(response.items);
-      
       const searchResults = JSON.stringify(response.items);
         res.render("results.ejs", {data: searchResults});
-    
     });
 
 
