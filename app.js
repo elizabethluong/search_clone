@@ -31,7 +31,7 @@ app.get("/searchResults.txt", (req, res) => {
     console.log(data);
   })
 });
-app.get("/results", (req, res) => res.render("results.html"));
+app.get("/results", (req, res) => res.render("results.ejs"));
 
 app.post("/search", (req, res) => {
   const url =
