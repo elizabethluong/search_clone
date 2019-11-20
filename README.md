@@ -1,16 +1,16 @@
 # lyrebird search documentation
 
 ### Contributors
-[Elizabeth Luong](https://github.com/elizabethluong/)
-[Mr T](https://github.com/tyhammer38)
+[Elizabeth Luong](https://github.com/elizabethluong/)\
+[Mr T](https://github.com/tyhammer38)\
 [Christopher King](https://github.com/seekingcode18)
 
 ## Contents
-[Brief](#brief)
-[User Stories](#user-stories)
-[Methodologies and Processes](#methodologies-and-processes)
-[Reviewing the Process](#reviewing-the-process)
-[Reflections on the Project](#reflections-on-the-project)
+[Brief](#brief)\
+[User Stories](#user-stories)\
+[Methodologies and Processes](#methodologies-and-processes)\
+[Reviewing the Process](#reviewing-the-process)\
+[Reflections on the Project](#reflections-on-the-project)\
 
 ## Brief
 Create a search engine with a home page and a results page
