@@ -24,7 +24,7 @@ app.use(express.urlencoded());
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-app.get("/", (req, res) => res.render("index.ejs", {data: 'ejs test'}));
+app.get("/", (req, res) => res.render("index.ejs"));
 // app.get("/searchResults.txt", (req, res) => {
 //   fs.readFile('./searchResults.txt', 'utf8', (err, data) => {
 //     if (err) console.log('error', err);
@@ -39,20 +39,20 @@ app.post("/search", (req, res) => {
     "https://www.googleapis.com/customsearch/v1?key=AIzaSyBfERkazXQItqZYA8iR2DgfE39QXItsPjU&cx=000973296940924731098:cjzveyjuqon&q=";
 console.log(url + userInput);
 
-  // fetch(url + userInput)
-  //   .then(response => {
-  //     return response.json();
-  //   })
-  //   .then(response => {
-  //     const searchResults = response.items;
-  //     fs.writeFile('searchResults.txt', JSON.stringify(searchResults), (err) => {
-  //       if (err) console.log('error', err);
-  //       console.log('file saved!')
-  //   });
+  fetch(url + userInput)
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      // const searchResults = response.items;
+      // console.log(response.items);
+      
+      const searchResults = JSON.stringify(response.items);
+        res.render("results.ejs", {data: searchResults});
+    
+    });
 
-  // });
 
-  res.render("results.ejs");
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
