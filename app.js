@@ -35,9 +35,12 @@ app.get("/results", (req, res) => res.render("results.ejs"));
 
 app.post("/search", (req, res) => {
   const userInput = req.body.keyword;
+
   const url =
     "https://www.googleapis.com/customsearch/v1?key=AIzaSyAFGfVnB-wP0YNoRlbwIYJry1YVo5A30dY&cx=000973296940924731098:cjzveyjuqon&q=";
-  console.log(url + userInput);
+  console.log(userInput);
+
+  console.log(req.originalUrl);
 
   fetch(url + userInput)
     .then(response => {
