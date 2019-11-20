@@ -1,0 +1,37 @@
+body {
+  display: block;
+  padding-top: 20px;
+}
+.container-search-header {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
+
+.logo-container > * {
+  display: inline;
+  padding-right: 10px;
+}
+.container-results {
+  text-align: left;
+  padding: 10px 40px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.result-heading,
+.result-url,
+.result-description {
+  padding-bottom: 10px;
+}
+.result-heading > a {
+  color: #16aee0;
+}
+.result-url > a {
+  color: green;
+}

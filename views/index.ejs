@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>lyrebird search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <a href="#">
+          <img
+            src="https://vignette.wikia.nocookie.net/mafiawars/images/6/68/Huge_item_lyrebird_01.png/revision/latest?cb=20131223075939"
+            alt="lyrebird-logo"
+          />
+        </a>
+        <h1><a href="#" class="logo">lyrebird search</a></h1>
+      </div>
+      <form action="/search" method="POST">
+        <input
+          type="text"
+          name="keyword"
+          id="keyword"
+          placeholder="Search Lyrebird"
+        />
+        <fieldset>
+          <input
+            type="submit"
+            name="searchButton"
+            id="searchButton"
+            value="Submit"
+          />
+          <input
+            type="button"
+            name="randomButton"
+            id="randomButton"
+            value="Random"
+          />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

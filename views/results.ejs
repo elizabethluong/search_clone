@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/results.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+
+    <title><%= keyword %> search results | lyrebird</title>
+  </head>
+  <body>
+    <div class="container-search-header">
+      <div= class="logo-container">
+      <img
+        src="https://vignette.wikia.nocookie.net/mafiawars/images/6/68/Huge_item_lyrebird_01.png/revision/latest?cb=20131223075939"
+        alt="lyrebird-logo" width= "50px"
+      />
+      <h2><a href="/" class="logo">lyrebird search</a></h2></div=>
+      <form action="/search" method="POST">
+        <input type="text" name="keyword" id="keyword" />
+        <input
+          type="submit"
+          name="searchButton"
+          id="searchButton"
+          value="Search"
+        />
+        <a class="randomBtn" href="<%= (JSON.parse(data)[Math.floor(Math.random()*10)].link) %>">Random</a>
+      </form>
+    </div>
+    <div class="container-results">
+      <h3 class="result-heading"><a href="<%= (JSON.parse(data)[0].link) %>"><%= (JSON.parse(data)[0].title) %>
+      </a></h3>
+      <p class="result-url"><a href="<%= (JSON.parse(data)[0].link) %>"><%= (JSON.parse(data)[0].link) %>
+        </p>
+      <p class="result-desciption">
+          <%= (JSON.parse(data)[0].snippet) %>
+      </p>
+  </div>
+  <div class="container-results">
+    <h3 class="result-heading"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].title) %>
+    </a></h3>
+    <p class="result-url"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].link) %>
+      </p>
+    <p class="result-desciption">
+        <%= (JSON.parse(data)[1].snippet) %>
+    </p>
+  </div>
+  <div class="container-results">
+      <h3 class="result-heading"><a href="<%= (JSON.parse(data)[2].link) %>"><%= (JSON.parse(data)[2].title) %>
+      </a></h3>
+      <p class="result-url"><a href="<%= (JSON.parse(data)[2].link) %>"><%= (JSON.parse(data)[2].link) %>
+        </p>
+      <p class="result-desciption">
+          <%= (JSON.parse(data)[2].snippet) %>
+      </p>
+    </div>
+    <div class="container-results">
+        <h3 class="result-heading"><a href="<%= (JSON.parse(data)[3].link) %>"><%= (JSON.parse(data)[3].title) %>
+        </a></h3>
+        <p class="result-url"><a href="<%= (JSON.parse(data)[3].link) %>"><%= (JSON.parse(data)[3].link) %>
+          </p>
+        <p class="result-desciption">
+            <%= (JSON.parse(data)[3].snippet) %>
+        </p>
+      </div>
+      <div class="container-results">
+          <h3 class="result-heading"><a href="<%= (JSON.parse(data)[4].link) %>"><%= (JSON.parse(data)[4].title) %>
+          </a></h3>
+          <p class="result-url"><a href="<%= (JSON.parse(data)[4].link) %>"><%= (JSON.parse(data)[4].link) %>
+            </p>
+          <p class="result-desciption">
+              <%= (JSON.parse(data)[4].snippet) %>
+          </p>
+        </div>
+
+        <div class="container-results">
+            <h3 class="result-heading"><a href="<%= (JSON.parse(data)[5].link) %>"><%= (JSON.parse(data)[5].title) %>
+            </a></h3>
+            <p class="result-url"><a href="<%= (JSON.parse(data)[5].link) %>"><%= (JSON.parse(data)[5].link) %>
+              </p>
+            <p class="result-desciption">
+                <%= (JSON.parse(data)[5].snippet) %>
+            </p>
+          </div>
+
+          <div class="container-results">
+              <h3 class="result-heading"><a href="<%= (JSON.parse(data)[6].link) %>"><%= (JSON.parse(data)[6].title) %>
+              </a></h3>
+              <p class="result-url"><a href="<%= (JSON.parse(data)[6].link) %>"><%= (JSON.parse(data)[6].link) %>
+                </p>
+              <p class="result-desciption">
+                  <%= (JSON.parse(data)[6].snippet) %>
+              </p>
+            </div>
+
+            <div class="container-results">
+                <h3 class="result-heading"><a href="<%= (JSON.parse(data)[7].link) %>"><%= (JSON.parse(data)[7].title) %>
+                </a></h3>
+                <p class="result-url"><a href="<%= (JSON.parse(data)[7].link) %>"><%= (JSON.parse(data)[7].link) %>
+                  </p>
+                <p class="result-desciption">
+                    <%= (JSON.parse(data)[7].snippet) %>
+                </p>
+              </div>
+
+              <div class="container-results">
+                  <h3 class="result-heading"><a href="<%= (JSON.parse(data)[8].link) %>"><%= (JSON.parse(data)[8].title) %>
+                  </a></h3>
+                  <p class="result-url"><a href="<%= (JSON.parse(data)[8].link) %>"><%= (JSON.parse(data)[8].link) %>
+                    </p>
+                  <p class="result-desciption">
+                      <%= (JSON.parse(data)[8].snippet) %>
+                  </p>
+                </div>
+
+                <div class="container-results">
+                    <h3 class="result-heading"><a href="<%= (JSON.parse(data)[9].link) %>"><%= (JSON.parse(data)[9].title) %>
+                    </a></h3>
+                    <p class="result-url"><a href="<%= (JSON.parse(data)[9].link) %>"><%= (JSON.parse(data)[9].link) %>
+                      </p>
+                    <p class="result-desciption">
+                        <%= (JSON.parse(data)[9].snippet) %>
+                    </p>
+                  </div>
+  </body>
+</html>

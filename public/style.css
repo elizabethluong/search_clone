@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container-results {
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+}
+
+.logo {
+  color: #a60400;
+}
+
+input[type="text"] {
+  border-radius: 12px;
+  width: 350px;
+  height: 30px;
+  border: gray 1px solid;
+  box-shadow: 0 0 5px #999999;
+  padding: 15px 20px;
+}
+
+input[type="button"],
+input[type="submit"],
+.randomBtn {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Libre Franklin", sans-serif;
+  background: #bce4f5;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.randomBtn:hover {
+  color: white;
+  background: #546a6b;
+}
+
+fieldset {
+  border: 0;
+  padding: 15px;
+}

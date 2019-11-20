@@ -1,0 +1,28 @@
+{
+  "name": "search_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizabethluong/search_clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizabethluong/search_clone/issues"
+  },
+  "homepage": "https://github.com/elizabethluong/search_clone#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cjs-loader": "^0.1.0",
+    "ejs": "^2.7.3",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7"
+  }
+}
