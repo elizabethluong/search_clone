@@ -7,18 +7,13 @@
 
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/results.css" />
-    
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Anton|Libre+Franklin&display=swap"
       rel="stylesheet"
     />
 
-    <title>Search Results</title>
+    <title><%= keyword %> search results | lyrebird</title>
   </head>
   <body>
     <div class="container-search-header">
@@ -47,7 +42,6 @@
       <p class="result-desciption">
           <%= (JSON.parse(data)[0].snippet) %>
       </p>
-  
   </div>
   <div class="container-results">
     <h3 class="result-heading"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].title) %>
@@ -135,13 +129,5 @@
                         <%= (JSON.parse(data)[9].snippet) %>
                     </p>
                   </div>
-
-
-    <p>
-    
-      
-    </p>
-
-    <script src="/main.js"></script>
   </body>
 </html>
