@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const fetch = require("node-fetch");
-const fs = require('fs');
+const fs = require("fs");
 
 // set html view engine using ejs. NEED ALL 5 LINES
 const path = require("path");
@@ -36,8 +36,8 @@ app.get("/results", (req, res) => res.render("results.ejs"));
 app.post("/search", (req, res) => {
   const userInput = req.body.keyword;
   const url =
-    "https://www.googleapis.com/customsearch/v1?key=AIzaSyBfERkazXQItqZYA8iR2DgfE39QXItsPjU&cx=000973296940924731098:cjzveyjuqon&q=";
-console.log(url + userInput);
+    "https://www.googleapis.com/customsearch/v1?key=AIzaSyAFGfVnB-wP0YNoRlbwIYJry1YVo5A30dY&cx=000973296940924731098:cjzveyjuqon&q=";
+  console.log(url + userInput);
 
   fetch(url + userInput)
     .then(response => {
@@ -46,13 +46,10 @@ console.log(url + userInput);
     .then(response => {
       // const searchResults = response.items;
       // console.log(response.items);
-      
+
       const searchResults = JSON.stringify(response.items);
-        res.render("results.ejs", {data: searchResults});
-    
+      res.render("results.ejs", { data: searchResults });
     });
-
-
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
