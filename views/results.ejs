@@ -42,7 +42,7 @@
     <div class="container-results">
       <h3 class="result-heading"><a href="<%= (JSON.parse(data)[0].link) %>"><%= (JSON.parse(data)[0].title) %>
       </a></h3>
-      <p class="result-url"><a href="<%= (JSON.parse(data)[0].link) %>"><%= (JSON.parse(data)[0].link) %>
+      <p class="result-url"><a href="<%= (JSON.parse(data)[0].link) %>"><%= (JSON.parse(data)[0].link) %></a>
         </p>
       <p class="result-desciption">
           <%= (JSON.parse(data)[0].snippet) %>
@@ -52,7 +52,7 @@
   <div class="container-results">
     <h3 class="result-heading"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].title) %>
     </a></h3>
-    <p class="result-url"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].link) %>
+    <p class="result-url"><a href="<%= (JSON.parse(data)[1].link) %>"><%= (JSON.parse(data)[1].link) %></a>
       </p>
     <p class="result-desciption">
         <%= (JSON.parse(data)[1].snippet) %>
@@ -61,7 +61,7 @@
   <div class="container-results">
       <h3 class="result-heading"><a href="<%= (JSON.parse(data)[2].link) %>"><%= (JSON.parse(data)[2].title) %>
       </a></h3>
-      <p class="result-url"><a href="<%= (JSON.parse(data)[2].link) %>"><%= (JSON.parse(data)[2].link) %>
+      <p class="result-url"><a href="<%= (JSON.parse(data)[2].link) %>"><%= (JSON.parse(data)[2].link) %></a>
         </p>
       <p class="result-desciption">
           <%= (JSON.parse(data)[2].snippet) %>
@@ -70,7 +70,7 @@
     <div class="container-results">
         <h3 class="result-heading"><a href="<%= (JSON.parse(data)[3].link) %>"><%= (JSON.parse(data)[3].title) %>
         </a></h3>
-        <p class="result-url"><a href="<%= (JSON.parse(data)[3].link) %>"><%= (JSON.parse(data)[3].link) %>
+        <p class="result-url"><a href="<%= (JSON.parse(data)[3].link) %>"><%= (JSON.parse(data)[3].link) %></a>
           </p>
         <p class="result-desciption">
             <%= (JSON.parse(data)[3].snippet) %>
@@ -79,7 +79,7 @@
       <div class="container-results">
           <h3 class="result-heading"><a href="<%= (JSON.parse(data)[4].link) %>"><%= (JSON.parse(data)[4].title) %>
           </a></h3>
-          <p class="result-url"><a href="<%= (JSON.parse(data)[4].link) %>"><%= (JSON.parse(data)[4].link) %>
+          <p class="result-url"><a href="<%= (JSON.parse(data)[4].link) %>"><%= (JSON.parse(data)[4].link) %></a>
             </p>
           <p class="result-desciption">
               <%= (JSON.parse(data)[4].snippet) %>
@@ -89,7 +89,7 @@
         <div class="container-results">
             <h3 class="result-heading"><a href="<%= (JSON.parse(data)[5].link) %>"><%= (JSON.parse(data)[5].title) %>
             </a></h3>
-            <p class="result-url"><a href="<%= (JSON.parse(data)[5].link) %>"><%= (JSON.parse(data)[5].link) %>
+            <p class="result-url"><a href="<%= (JSON.parse(data)[5].link) %>"><%= (JSON.parse(data)[5].link) %></a>
               </p>
             <p class="result-desciption">
                 <%= (JSON.parse(data)[5].snippet) %>
@@ -99,7 +99,7 @@
           <div class="container-results">
               <h3 class="result-heading"><a href="<%= (JSON.parse(data)[6].link) %>"><%= (JSON.parse(data)[6].title) %>
               </a></h3>
-              <p class="result-url"><a href="<%= (JSON.parse(data)[6].link) %>"><%= (JSON.parse(data)[6].link) %>
+              <p class="result-url"><a href="<%= (JSON.parse(data)[6].link) %>"><%= (JSON.parse(data)[6].link) %></a>
                 </p>
               <p class="result-desciption">
                   <%= (JSON.parse(data)[6].snippet) %>
@@ -109,7 +109,7 @@
             <div class="container-results">
                 <h3 class="result-heading"><a href="<%= (JSON.parse(data)[7].link) %>"><%= (JSON.parse(data)[7].title) %>
                 </a></h3>
-                <p class="result-url"><a href="<%= (JSON.parse(data)[7].link) %>"><%= (JSON.parse(data)[7].link) %>
+                <p class="result-url"><a href="<%= (JSON.parse(data)[7].link) %>"><%= (JSON.parse(data)[7].link) %></a>
                   </p>
                 <p class="result-desciption">
                     <%= (JSON.parse(data)[7].snippet) %>
@@ -119,7 +119,7 @@
               <div class="container-results">
                   <h3 class="result-heading"><a href="<%= (JSON.parse(data)[8].link) %>"><%= (JSON.parse(data)[8].title) %>
                   </a></h3>
-                  <p class="result-url"><a href="<%= (JSON.parse(data)[8].link) %>"><%= (JSON.parse(data)[8].link) %>
+                  <p class="result-url"><a href="<%= (JSON.parse(data)[8].link) %>"><%= (JSON.parse(data)[8].link) %></a>
                     </p>
                   <p class="result-desciption">
                       <%= (JSON.parse(data)[8].snippet) %>
@@ -129,19 +129,47 @@
                 <div class="container-results">
                     <h3 class="result-heading"><a href="<%= (JSON.parse(data)[9].link) %>"><%= (JSON.parse(data)[9].title) %>
                     </a></h3>
-                    <p class="result-url"><a href="<%= (JSON.parse(data)[9].link) %>"><%= (JSON.parse(data)[9].link) %>
+                    <p class="result-url"><a href="<%= (JSON.parse(data)[9].link) %>"><%= (JSON.parse(data)[9].link) %></a>
                       </p>
                     <p class="result-desciption">
                         <%= (JSON.parse(data)[9].snippet) %>
                     </p>
                   </div>
 
+                  
 
     <p>
     
       
     </p>
 
+
+
     <script src="/main.js"></script>
+
+    <button onclick = "backToTop()" id="btn" title="go to top" >^</button>
+
+    <script>
+      
+      var mybutton = document.getElementById("btn");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
   </body>
 </html>
