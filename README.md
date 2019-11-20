@@ -10,7 +10,7 @@
 [User Stories](#user-stories)\
 [Methodologies and Processes](#methodologies-and-processes)\
 [Reviewing the Process](#reviewing-the-process)\
-[Reflections on the Project](#reflections-on-the-project)\
+[Reflections on the Project](#reflections-on-the-project)
 
 ## Brief
 Create a search engine with a home page and a results page
@@ -18,15 +18,15 @@ Create a search engine with a home page and a results page
 Create a version of Google with a home page, a logo, a search bar and 2 buttons. Try to make it as much like Google as possible. Pressing one button, an API call should be executed and be taken to a page with 10 results. For the other button, users should be taken to one of the results.
 
 ## User Stories
-As a user, I'd like to be able to find information about a specific keyword
-As a user, I'd like to see which search engine I'm using
-As a user, I'd like to type in the keyword in a search bar
-As a user, I'd like to press a button to take me to the results
-As a user, I'd like to see the top 10 results of that specific keyword
-As a user, I'd like to click a random button to load a random page about that subject
+1. As a user, I'd like to be able to find information about a specific keyword
+2. As a user, I'd like to see which search engine I'm using
+3. As a user, I'd like to type in the keyword in a search bar
+4. As a user, I'd like to press a button to take me to the results
+5. As a user, I'd like to see the top 10 results of that specific keyword
+6. As a user, I'd like to click a random button to load a random page about that subject
 
 ## Methodologies and Processes
-Pair programming with 30 minute driver/navigator + 5 minute breaks
+Pair programming with 30 minute driver/navigator + 5 minute breaks\
 VS Code
 
 ### Technologies
